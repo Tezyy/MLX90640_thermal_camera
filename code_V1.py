@@ -5,16 +5,16 @@ import adafruit_mlx90640
 
 
 # --- CONFIGURATION ---
-ALARM_THRESHOLD = 20.0  # Temperature to trigger alarm (Celsius)
-DISTANCE_MODE = True    # Set to True to enable a simple noise filter for distance
-PRINT_TEMPERATURES = False # Set to tru to enable temperature printing
-PRINT_ASCIIART = False # Set to true to enable asciiart printing
-REQUIRED_DURATION = 30.0    # Temps cumulé au-dessus du seuil
-GRACE_PERIOD = 5.0          # Temps de tolérance avant de réinitialiser le timer
+ALARM_THRESHOLD = 20.0     # Temperature to trigger alarm (Celsius)
+DISTANCE_MODE = True       # Set to True to enable a simple noise filter for distance
+PRINT_TEMPERATURES = False # Set to true to enable temperature printing
+PRINT_ASCIIART = False     # Set to true to enable asciiart printing
+REQUIRED_DURATION = 30.0   # Cumulative time spent above the threshold
+GRACE_PERIOD = 5.0         # Tolerance time before resetting the timer
 
-overheat_accumulator = 0.0  # Temps total passé en surchauffe
+overheat_accumulator = 0.0  # Total time spent in overheat state
 last_check_time = time.monotonic()
-last_high_temp_time = None  # Moment où on a vu une température haute pour la dernière fois
+last_high_temp_time = None  # The last time a high temperature was detected
 alarm_active = False
 
 i2c = busio.I2C(board.SCL, board.SDA, frequency=800000)
