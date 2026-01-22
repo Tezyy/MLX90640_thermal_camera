@@ -1,0 +1,20 @@
+programme :
+- essayer le bureau virtuel sur tigerVNC ou réinstaller une version de linux sur la raspberry
+- faire le programme avec affichage pixels de couleurs
+- faire le programme comparant les points chauds
+- 
+
+- A CHANGER :
+- attendre 4min pour une précision de la mesure : p49/60
+- aller voir p54 : use the device in image mode
+	- donc checker la get_frame de la bibliothèque adafruit
+	- checker si get_frame lit les 2 subpages avant de faire les calculs
+- faire un script python qui lorsqu'il s'execute en mode 'sudo'
+ 	- suis le tuto pour créer une env, télécharge les bibliothèques
+
+POur BATTRELOAD :
+- Scrypt
+- ReadMe : expliquant les grandes lignes du code
+	- comment setup tout le code
+	- comment changer l'émissivité et le Ta (mettre la commande pour ouvrir le fichier
+
