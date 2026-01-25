@@ -1,5 +1,12 @@
 # Setup Instructions
 
+## Hardware
+
+1) Brancher le câble bleu sur le SCA, câble jaune SCL, rouge sur 3.3V, noir sur GND.
+2) Allumer la Raspberry
+
+## Software
+
 1) Ouvrir la Raspberry
 2) Copier le fichier setup.sh
 3) changer le nom de l'environnement virtuel : variable VENV_NAME
@@ -11,7 +18,7 @@
     python3 -c "import adafruit_mlx90640; print(adafruit_mlx90640.__file__)"
     - ouvrir avec :
     sudo nano "chemind_accès"
-7) Python3 monitoring.py ou python3 image.py
+8 Python3 monitoring.py ou python3 image.py
 
 Pour l'aluminium, l'emissivity factor est compris entre 0.2 et 0.7. Donc à tester sur les batteries.
-Pour le T_a (ambient temperature), il faut le fixer à une valeur moyenne de température dans la zone de stockage
+Pour le T_a (ambient temperature), il faut le fixer à une valeur moyenne de température dans la zone de stockage.
