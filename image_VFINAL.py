@@ -20,7 +20,7 @@ ALPHA = 0.5
 dynamic_min = 20.0
 dynamic_max = 35.0
 
-# --- Masque Gaussien 3x3 ---
+# Masque Gaussien 3x3, les forces de chaque pixels sont ajustables.
 GAUSSIAN_KERNEL = np.array([
     [1, 2, 1],
     [2, 4, 2],
